@@ -93,7 +93,8 @@
   <h2 class="h4 m-4 text-light">Contacto</h2>      
   <div class="row">
     <div class="col-xxl-3"> 
-        <form action="https://formsubmit.co/marianaolivera83@gmail.com" method="POST">
+      <form id="form" class="form"
+      action="https://formspree.io/f/xdojnllj" method="POST">
             <div class="contacto">
                 <label  for="name">Nombre:</label>
                 <input type="text" name="name" class="form-control" placeholder="Ingresa el nombre">
@@ -103,12 +104,9 @@
                 <input type="text" name="subject"    class="form-control" placeholder="Ingresa el asunto">
                 <label for="mensaje">Mensaje:</label>
                 <textarea name="comments" class="form-control" placeholder="Ingresa el mensaje"></textarea>
-                <input type="submit" value="Enviar" target=black>
-                <input type="hidden" name="_next" value="https://marianaolivera.github.io/FetchentuProyecto">
-                
-
-            </div> 
-        </form>
+                <button type="submit" class="btn btn-success">Enviar mensaje</button>
+        </div> 
+        </form>  
     </div>
     <div id="contenedorMapa" class="col-xxl-8 contacto"> 
         <h5>Dónde Estamos</h5>
