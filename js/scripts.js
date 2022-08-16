@@ -147,6 +147,23 @@ btnMostrarAlert.onclick= mostarAlert
      alert('Gracias por contactarnos,le escribiremos pronto')
    }
  }
+ function registrarProducto(producto) {
+  fetch("https://62fae15c3c4f110faaa03c5f.mockapi.io/Productos",{
+    method:"POST",
+    body:JSON.stringify(producto),
+    headers:{
+      "Content-Type":"application/json",
+    },
+})
+  .then((response)=> response.json())
+  .then((data)=>console.log(data));
+}
+const productoARegistrar = {
+  "nombre": "Coffe Town",
+  "cantidad": 10,
+  "precioVenta": "1500.00",
+}
+registrarProducto(productoARegistrar)
 
 function addLocalStorage(){
   localStorage.setItem('carrito', JSON.stringify(carrito))
